@@ -1,0 +1,397 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.border{
+    margin: 40px auto;
+    width: 50px;
+    height: 5px;
+    background: #00adb5;
+}
+
+.round{
+    border: none;
+    border-radius: 100px;
+   }
+
+img{
+    width: 130px;
+    height: 130px;
+}
+
+
+/*HEADER*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    display: flex;
+    padding: 20px 100px;
+    width: 100%;
+    background-color: #303841;
+    transition: 0.5s;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.sticky{
+    padding: 10px 10px;
+    background: #303841;
+    transition: 1s;
+}
+
+header .logo{
+    position: relative;
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: .5s;
+}
+
+@media screen and (max-width: 807px){
+    header ul li a{
+        display: none;
+    }
+}
+
+header ul li a:hover{
+    color: #0FADB5;
+}
+
+
+/*BANNER*/
+.banner{
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    background: url(../img/background.jpg);
+    background-size: cover;
+}
+
+@media screen and (max-width: 790px){
+    .banner{
+        background-position: center;
+    }
+}
+
+.heading{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 55px;
+}
+
+@media screen and (max-width: 384px){
+    .heading{
+        font-size: 40px;
+    }
+}
+
+.heading__text{
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+
+@media screen and (max-width: 384px){
+.heading__text{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 279px){
+.heading__text{
+        margin-top: 30px;
+    }
+}
+
+
+/*WEB SKILLS*/
+.container{
+    display: flex;
+    height: 550px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media screen and (max-width: 698px){
+    .container{
+        height: auto;
+    }
+}
+
+.box{
+    padding: 50px;
+    display: table-cell;
+    border-bottom: 5px solid #00ADB5;
+    border-radius: 5px;
+    background: #EBEBEB;
+    vertical-align: middle;
+    text-align: center;
+    flex-basis: 25%; 
+    transition: transform .5s;
+}
+
+@media screen and (max-width: 698px){
+    .box:nth-child(3){
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 458px){
+    .box:nth-child(3){
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+.box:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+section>h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+
+/*ABOUT ME*/
+.content__area{
+    width: 100%;
+    background-color: #EBEBEB;
+    text-align: center;
+}
+
+.content__area>h2{
+    padding-top: 5vh;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.content__area>img{
+    width: 150px;
+    height: 150px;
+    transition: transform 1.5s;
+}
+
+.content__area>img:hover{
+    cursor: pointer;
+    transform: scale(1.7); 
+}
+
+.content__area>p{
+    font-weight: 550;
+    font-size: 18px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+
+/*CONTACT*/
+.contact-us{
+    width: 100%;
+    background-color: #F7F9F8;
+}
+
+.contact-section{
+    padding: 40px 0;
+}
+
+.contact-section>h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.border{
+    margin: 40px auto;
+    width: 50px;
+    height: 5px;
+    background: #00adb5;
+}
+
+.contact-form{
+    overflow: hidden;
+    margin: auto;
+    padding: 0 10px;
+    max-width: 600px;
+}
+
+.contact-form-text{
+    display: block;
+    overflow: none;
+    box-sizing: border-box;
+    margin: 12px 0;
+    padding: 15px 30px;
+    width: 100%;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    background: white;
+    transition: .6s;
+}
+
+.contact-form-text:focus{
+    outline: none;
+    outline-offset: 0px;
+    box-shadow: 0 0 10px #00ADB5;
+}
+
+textarea.contact-form-text{
+    height: 120px;
+    resize: none;
+}
+
+.contact-form-btn{
+    margin-left: 28vh;
+    padding: 10px 50px;
+    border: 0;
+    border-radius: 5px;
+    background: #00ADB5;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-form-btn:hover{
+    outline: none;
+}
+
+input:focus::-webkit-input-placeholder{
+    color: transparent;
+    transition: 0.8s;
+}
+
+.contact>a{
+    color: #19B4BB; 
+}
+
+li a {
+    color: #19B4BB;
+    text-decoration: none;
+}
+.contact{
+    color: black;
+    text-align: center;
+    font-size: 18px;
+}
+
+.contact>li{
+    text-decoration: none;
+}
+
+
+.contact li:hover{
+    text-decoration: underline;
+}
+
+.fa-facebook, .fa-whatsapp, .fa-instagram{
+    margin: 10px 10px;
+    text-decoration: none;
+    font-size: 35px;
+    transition: transform .5s
+}
+
+.fa-facebook:hover, .fa-whatsapp:hover, .fa-instagram:hover{
+    transform: scale(1.5,1.5);
+}
+
+
+/*LOCATION (Iframe)*/
+iframe{
+    width: 100%;
+    height: 60vh;
+}
+
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    height: 17vh;
+    background: #333333;
+    color: white;
+}
+
+.copyright{
+    float: right;
+    margin: auto;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.bottomnav{
+    padding: 25px 16px;
+    text-align: center;
+}
+
+.bottomnav>a{
+    margin: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: .5s;
+}
+
+@media screen and (max-width: 380px){
+    .bottomnav>a{
+        font-size: 13px;
+        margin: 5px;
+    }
+    
+    span{
+        font-size: 12px;
+    }
+}
+
+.bottomnav>a:hover{
+    color: #0FADB5;
+}
+
+
+

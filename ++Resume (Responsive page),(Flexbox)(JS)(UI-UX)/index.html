@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header>
+        <a href="#" class="logo">Resume</a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#part1">Web Skills</a></li>
+                <li><a href="#part2">About Me</a></li>
+                <li><a href="#part3">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--BANNER-->
+    <section class="banner">
+        <h1 class="heading">Grigor Safaryan</h1>
+        <p class="heading__text">Web Developer</p>
+    </section>
+
+    <!--WEB SKILLS-->
+    <main>
+        <section id="part1">
+            <br>
+            <br>
+            <h2>Web skills</h2>
+            <div class="border"></div>
+            <div class="container">
+                <div class="box">
+                    <img src="img/1.jpg" alt="html/css" class="round">
+                    <h3>HTML/CSS</h3>
+                    <p>HTML5, Bootstrap5, CSS3, SASS, LESS, SCSS, GitHub.</p>
+                </div>
+
+                <div class="box">
+                    <img src="img/2.jpeg" alt="html/css" class="round">
+                    <h3>JavaScript</h3>
+                    <p>JavaScript, Paroller JS, Parallax JS, Swipe JS, JQuerry, Canvas.</p>
+                </div>
+
+                <div class="box">
+                    <img src="img/3.png" alt="html/css" class="round">
+                    <h3>CodeEditors</h3>
+                    <p>Sublime Text 3, Visual Studio Code, NotePad++, Adobe Brackets.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--ABOUT ME-->
+    <article id="part2">
+        <div class="content__area">
+            <h2>About Me</h2>
+            <div class="border"></div>
+            <br>
+            <img src="img/4.jpg" alt="MyPhoto" class="round">
+            <h3>Education</h3>
+            <br>
+            <p>Armenian State Univercity of Economics 2015 - 2019</p>
+            <p>Microsoft Official Academic Course 10.05.2019 - 08.01.2020</p>
+            <p>BeOnMax online programming courses</p>
+            <br>
+        </div>
+    </article>
+
+    <!--CONTACT-->
+    <section id="part3" class="contact-us">
+        <div class="contact-section">
+            <h2>Contact</h2>
+            <div class="border"></div>
+            <form class="contact-form" action="index.html" method="post">
+                <input type="text" class="contact-form-text" placeholder="Your Name">
+                <input type="text" class="contact-form-text" placeholder="Your Phone">
+                <input type="email" class="contact-form-text" placeholder="Your Email">
+                <textarea class="contact-form-text" placeholder="Your Message"></textarea>
+                <input type="submit" class="contact-form-btn" value="SEND">
+            </form>
+        </div>
+
+        <div class="contact">
+            <ul>
+                <p>Armenia Yerevan Baxyan 13</p>
+                <br>
+                <li>
+                    <a href="tel:+374(93)89-82-82" class="phone"><i class="fa fa-phone" aria-hidden="true"></i> +374(93)89-82-82 - VivaCell</a>
+                </li>
+                <li>
+                    <a href="mailto: grigsgog@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> grigsgog@gmail.com</a>
+                </li>
+            </ul>
+            <a href="https://www.facebook.com/" class="fa fa-facebook" aria-hidden="true" target="blank"></a>
+            <a href="https://www.whatsapp.com/?lang=ru" class="fa fa-whatsapp" aria-hidden="true" target="blank"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram" aria-hidden="true" target="blank"></a>
+        </div>
+    </section>
+
+
+    <!--LOCATION (Iframe)-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.6166600660863!2d44.56201521531455!3d40.19534377699799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406aa336c3eff8c7%3A0x2e15ed37d066c892!2zQmFnaHlhbiBTdCwgWWVyZXZhbiwg0JDRgNC80LXQvdC40Y8!5e0!3m2!1sru!2s!4v1611912426404!5m2!1sru!2s" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    <!--FOTTER-->
+    <!--Dzel navi divi ul li pahery-->
+    <footer>
+        <nav>
+            <div class="bottomnav">
+                <a href="#" class="main">Main</a>
+                <a href="#part1">Web skills</a>
+                <a href="#part2">About Me</a>
+                <a href="#part3">Contact</a>
+            </div>
+        </nav>
+        <span class="copyright">All Rights Reserved 2021 ©</span>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
